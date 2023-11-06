@@ -106,8 +106,8 @@ class AwesomeSnackbarContent extends StatelessWidget {
                 AssetsPath.bubbles,
                 height: size.height * 0.06,
                 width: size.width * 0.05,
-                colorFilter:
-                    _getColorFilter(hslDark.toColor(), ui.BlendMode.srcIn),
+                // colorFilter:
+                //     _getColorFilter(hslDark.toColor(), ui.BlendMode.srcIn),
                 package: 'awesome_snackbar_content',
               ),
             ),
@@ -132,8 +132,8 @@ class AwesomeSnackbarContent extends StatelessWidget {
                 SvgPicture.asset(
                   AssetsPath.back,
                   height: size.height * 0.06,
-                  colorFilter:
-                      _getColorFilter(hslDark.toColor(), ui.BlendMode.srcIn),
+                  // colorFilter:
+                  //     _getColorFilter(hslDark.toColor(), ui.BlendMode.srcIn),
                   package: 'awesome_snackbar_content',
                 ),
                 Positioned(
@@ -244,7 +244,7 @@ class AwesomeSnackbarContent extends StatelessWidget {
     }
   }
 
-  static ColorFilter? _getColorFilter(
-          ui.Color? color, ui.BlendMode colorBlendMode) =>
-      color == null ? null : ui.ColorFilter.mode(color, colorBlendMode);
+  // static ColorFilter? _getColorFilter(
+  //         ui.Color? color, ui.BlendMode colorBlendMode) =>
+  //     color == null ? null : ui.ColorFilter.mode(color, colorBlendMode);
 }
